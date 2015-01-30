@@ -1,0 +1,7 @@
+<div>
+    <div class="explorer-results l-fluid-container">
+        <div ng-repeat="artist in artists track by artist.id" explorer-result="artist" class="l-explorer-cell">
+        </div>
+    </div>
+    <p ng-if="size == 0" data-t-no-results ng-transclude></p>
+</div>
