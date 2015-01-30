@@ -1,0 +1,49 @@
+@import "susy";
+
+$susy: (
+  columns: 24,
+  gutters: 1,
+  gutter-position: split
+);
+
+.l-fluid-container {
+  @include container();
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  };
+}
+
+.l-menu-bar {
+  @include span(25%);
+}
+
+.l-search-bar {
+  @include span(last 25%);
+}
+
+.l-nav-col {
+  @include span(span 6 of 24);
+}
+
+.l-content-col {
+  @include span(last span 18 of 24);
+}
+
+.l-explorer-cell {
+  @include span(span 4 of 20);
+  display:inline-block;
+  vertical-align:middle;
+  margin-bottom:5px;
+  float:none;
+}
+
+.l-explorer-cell:nth-child(5n) {
+  margin-right:0;
+}
+
+
+
+
+

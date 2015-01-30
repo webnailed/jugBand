@@ -1,0 +1,19 @@
+@import 'compass/reset';
+@import 'compass/css3';
+@mixin font-smoothing($val: antialiased) {
+  -webkit-font-smoothing: $val;
+  -moz-font-smoothing: $val;
+  -ms-font-smoothing: $val;
+  -o-font-smoothing: $val;
+}
+html {
+  font-size:14px;
+}
+body {
+  @include font-smoothing(antialised);
+  background:#0F111E;
+  font-size:1rem;
+}
+a, span {
+  color:#7f858c;
+}
